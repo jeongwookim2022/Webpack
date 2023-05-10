@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpack!</title>
+  <!-- RESET CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="./scss/main.scss"> -->
+  <!-- 위의 css링크는 사용하지 않음. main.js에 main.scss파일을 연결해줬기 때문이다. -->
+  <!-- 이게 가능한 이유는, webpackconfig에서 entry: './js/main.js'로 설정했기 때문이다. -->
+  <!-- JS -->
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <h1>Webpack!</h1>
+  <!-- 현재 index.html의 경로상 (1)번이 맞지만 dist폴더 내부에서는 (2)번이 맞다. -->
+  <!-- 이것이 동작하도록 하기 위해선, webpack.config.js에서 설정해준다. -->
+  <!-- (1) -->
+  <!-- <img src="./static/images/KakaoTalk_20220714_005836444.jpg" alt=""> -->
+  <!-- (2) -->
+  <img src="./images/KakaoTalk_20220714_005836444.jpg" alt="">
+</body>
+</html>

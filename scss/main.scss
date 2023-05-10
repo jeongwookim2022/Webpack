@@ -1,0 +1,12 @@
+$color--black: #000;
+$color--white: #fff;
+
+
+body {
+  background-color: $color--black;
+  h1 {
+    color: $color--white;
+    font-size: 40px;
+    display: flex; // autoprefixer로 old browser에서도 사용 가능하도록 함.
+  }
+}
